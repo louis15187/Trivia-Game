@@ -34,3 +34,13 @@ function submitAnswers() {
 
     return false;
 }
+//Time Out Function
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(alertFunc, 30000);
+}
+
+function alertFunc() {
+    alert("Times Up!");
+}
