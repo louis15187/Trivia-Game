@@ -38,9 +38,10 @@ function submitAnswers() {
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(alertFunc, 30000);
+    myVar = setTimeout(function() { alert("Time's Up!") }, 30000);
 }
 
-function alertFunc() {
-    alert("Times Up!");
+function myStopFunction() {
+    clearTimeout(myVar);
+
 }
