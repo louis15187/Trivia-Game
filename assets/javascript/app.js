@@ -12,7 +12,7 @@ function submitAnswers() {
     // Validation
     for (i = 1; i <= total; i++) {
         if (eval('q' + i) == null || eval('q' + i) == '') {
-            alert('You missed question ' + i);
+            alert("You haven't completed the quiz");
             return false;
         }
     }
@@ -22,8 +22,11 @@ function submitAnswers() {
 
     // Check Answers
     for (i = 1; i <= total; i++) {
+        // console.log(eval(q + i))
         if (eval('q' + i) == answers[i - 1]) {
             score++;
+
+
         }
     }
 
@@ -44,4 +47,9 @@ function myFunction() {
 function myStopFunction() {
     clearTimeout(myVar);
 
+
+
 }
+myFunction()
+
+//myStopFunction()
